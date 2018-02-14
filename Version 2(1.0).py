@@ -10,6 +10,7 @@ class Depuradora(object):
         self.inicia()
 
     def inicia(self):
+
         lista1 = []
         lista2 = []
 
@@ -28,10 +29,24 @@ class Depuradora(object):
         else:
             print('Existem lançamentos a maior em %s.' % (self.b))
 
-        analisa()
+        self.analisa(l1, l2)
 
-    def analisa(self):
-        
+    def analisa(self, a, b):
+        g = []
+        h = []
+
+        for i in a:
+            g.append(i)
+        for o in b:
+            h.append(o)
+
+        for z in g:
+            for t in h:
+                if z[0] == t[0]:
+                    h.remove(t)
+
+        for l in h:
+            print(l)
 
 
 arq1 = input("Digite o nome do primeiro arquivo (sem a extensão CSV): ")
