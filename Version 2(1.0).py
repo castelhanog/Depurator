@@ -40,14 +40,14 @@ class Depuradora(object):
         for o in b:
             h.append(o)
 
-        for z in g:
-            for t in h:
-                if z[0] == t[0]:
-                    h.remove(t)
-
         for l in h:
-            print(l)
+            for k in g:
+                if l[4] == k[4]:
+                    g.remove(k)
+            h.remove(l)
 
+        for q in h:
+            print(q)
 
 arq1 = input("Digite o nome do primeiro arquivo (sem a extensão CSV): ")
 arq2 = input("Digite o nome do segundo arquivo(sem a extensão CSV): ")
