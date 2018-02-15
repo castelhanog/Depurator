@@ -40,12 +40,12 @@ class Depuradora(object):
         for o in b:
             h.append(o)
 
-        for l in h:
-            for k in g:
-                if l[5] == k[5]:
-                    g.remove(k)
+        for l in g:
+            for k in h:
+                if l[4] == k[4]:
+                    h.remove(k)
                     break
-            h.remove(l)
+
 
         for q in h:
             print(q)
